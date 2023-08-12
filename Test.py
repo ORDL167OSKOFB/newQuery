@@ -1,6 +1,7 @@
 import json
+import os
 import pyodbc
-import azure.functions as func
+# import azure.functions as func
 
 def get_connection_string():
     azure_db = os.environ.get('DB_CONNECTION_STRING')
