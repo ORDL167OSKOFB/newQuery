@@ -1,6 +1,8 @@
 import os
 import pyodbc
+from flask import Flask
 
+app = Flask(__name__)
 def get_connection_string():
     azure_db = os.environ.get('DB_CONNECTION_STRING')
     return azure_db
@@ -23,3 +25,5 @@ def main():
 
 if __name__ == '__main__':
     main()
+    
+    
